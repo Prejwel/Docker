@@ -1,4 +1,8 @@
 # Docker-basics
+Docker editions 
+* community edition - free docker products 
+* Enterprise edition 
+
 Matrix from Hell - compatibility matrix issue 
 
 With Docker we can run each component ( webserver , DB, messaging, Orchestration ) in a seperate container with its own dependencies and its own Libraries, all on the same VM & OS but within seperate Enviornments / Containers
