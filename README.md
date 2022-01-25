@@ -22,8 +22,7 @@ Containerized versions of applications are readily available in Docker Hub
 
 * CONTAINERS vs IMAGE
 
-Docker Image is a package or template , 
-It can be used to create one or more containers
+Docker Image is a package or template , It can be used to create one or more containers
 Containers are running instances of images that are isolated and have their own set of processes
 
 If we cant find an image , we can create one of our own and push it to docker hub repository
