@@ -36,9 +36,9 @@ will run an instance of nginx application on the docker host if it already exist
 If the image is not there then it will go out to docker hub & pull the iimage down ( done only the 1st time)
 
 * ps command
-will list all running containers and some basic information about them ( CID, Image Name, current status , name of container)
+will list all running containers and some basic information about them ( CID, Image Name, current status , Cname)
 
-*docker ps -a -> will show all running & exitedd containers.
+* docker ps -a -> will show all running & exitedd containers.
 
 to STOP a running container
 * docker stop CID/Cname
