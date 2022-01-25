@@ -40,6 +40,13 @@ will list all running containers and some basic information about them ( CID, Im
 
 * docker ps -a -> will show all running & exitedd containers.
 
-to STOP a running container
-* docker stop CID/Cname
+* docker stop CID/Cname -> to STOP a running container
+
+* docker rm Cname-> to  remove a stopped or exited container
+
+* docker images -> to see the list of images in our host along with its sizes.
+
+* docker rmi imagename - > to remove an image that we no longer want to use ( we must ensure that no containers are running using that image). We must stop and delete all dependent containers if we want to delete an image.
+
+*docker pull imagename -> to only pull the image and keep it so as to use it quickly when ever we want. 
 
