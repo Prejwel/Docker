@@ -55,7 +55,7 @@ will list all running containers and some basic information about them ( CID, Im
 * docker exec Cname command - >  exec - to executate a command on a running container.
 
 ATTACH & DETACH mode
-* in attached mode we can onlt see the output and cant do anything else.
+* in attached mode we can only see the output and cant do anything else.
 * pressing Ctlr+C will exit from attach mode & we will go back to prompt
 * -d -> used to run the container in detached mode.
 * docker run -d Cname -> container will run in background, 
