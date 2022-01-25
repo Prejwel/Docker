@@ -48,5 +48,15 @@ will list all running containers and some basic information about them ( CID, Im
 
 * docker rmi imagename - > to remove an image that we no longer want to use ( we must ensure that no containers are running using that image). We must stop and delete all dependent containers if we want to delete an image.
 
-*docker pull imagename -> to only pull the image and keep it so as to use it quickly when ever we want. 
+* docker pull imagename -> to only pull the image and keep it so as to use it quickly when ever we want. 
 
+* docker run ubuntu sleep 5 -> execution of a command when we run the container
+
+* docker exec Cname command - >  exec - to executate a command on a running container.
+
+ATTACH & DETACH mode
+* in attached mode we can onlt see the output and cant do anything else.
+* pressing Ctlr+C will exit from attach mode & we will go back to prompt
+* -d -> used to run the container in detacher mode.
+* docker run -d Cname -> container will run in background, 
+* docker attach CID -> to attach back to the container
