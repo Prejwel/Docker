@@ -1,5 +1,6 @@
 # Docker-basics
 * Main purpose of Docker  - To package and containerize applications and to ship them & to run them anytime anywhere as many times as we want.
+* 
 Docker editions 
 * community edition - set of free docker products 
 * Enterprise edition - certified & supported container platform that comes with enterprise add ons ( image management, image security )
