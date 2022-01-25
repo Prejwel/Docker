@@ -57,6 +57,6 @@ will list all running containers and some basic information about them ( CID, Im
 ATTACH & DETACH mode
 * in attached mode we can onlt see the output and cant do anything else.
 * pressing Ctlr+C will exit from attach mode & we will go back to prompt
-* -d -> used to run the container in detacher mode.
+* -d -> used to run the container in detached mode.
 * docker run -d Cname -> container will run in background, 
 * docker attach CID -> to attach back to the container
