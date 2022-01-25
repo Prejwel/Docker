@@ -25,4 +25,21 @@ Containerized versions of applications are readily available in Docker Hub
 Docker Image is a package or template , It can be used to create one or more containers.
 Containers are running instances of images that are isolated and have their own set of processes
 
-If we cant find an image , we can create one of our own and push it to docker hub repository
+If we cant find an image , we can create one of our own and push it to docker hub repository.
+
+DOCKER COMMANDS
+---------------
+* docker run - used to run a container from an image.
+docker run imageName
+Eg) docker run nginx
+will run an instance of nginx application on the docker host if it already exists.
+If the image is not there then it will go out to docker hub & pull the iimage down ( done only the 1st time)
+
+* ps command
+will list all running containers and some basic information about them ( CID, Image Name, current status , name of container)
+
+*docker ps -a -> will show all running & exitedd containers.
+
+to STOP a running container
+* docker stop CID/Cname
+
