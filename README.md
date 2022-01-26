@@ -43,11 +43,11 @@ will list all running containers and some basic information about them ( CID, Im
 
 * docker stop CID/Cname -> to STOP a running container
 
-* docker rm Cname-> to  remove a stopped or exited container.  We can remove more than 1 container at once using a single 'rm' command.
+* docker rm Cname/CID-> to  remove a stopped or exited container.  We can remove more than 1 container at once using a single 'rm' command.
 
 * docker images -> to see the list of images in our host along with its sizes.
 
-* docker rmi imagename - > to remove an image that we no longer want to use ( we must ensure that no containers are running using that image). We must stop and delete all dependent containers if we want to delete an image.
+* docker rmi imagename/ImageID - > to remove an image that we no longer want to use ( we must ensure that no containers are running using that image). We must stop and delete all dependent containers if we want to delete an image.
 
 * docker pull imagename -> to only pull the image and keep it so as to use it quickly when ever we want. 
 
@@ -62,7 +62,7 @@ will list all running containers and some basic information about them ( CID, Im
 ATTACH & DETACH mode
 * in attached mode we can only see the output and cant do anything else.
 * pressing Ctlr+C will exit from attach mode & we will go back to prompt
-* -d -> used to run the container in detached mode.
+* -d -> to run the container in detached mode.
 * docker run -d Cname -> container will run in background, 
 * docker attach CID -> to attach back to the container
 ---------------------
@@ -70,3 +70,8 @@ Containers are ment to run a specific task
 ie: to do some sort of computation.
 Once the task is complete , then the container exits.
 Container lives only as long as the process inside it is alive.
+--------------------
+Practicals
+* Ctrl+C -> stop a container
+*  --name newname -> to give a name to a container along with docker run command.
+*
