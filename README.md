@@ -39,11 +39,11 @@ If the image is not there then it will go out to docker hub & pull the iimage do
 * ps command
 will list all running containers and some basic information about them ( CID, Image Name, current status , Cname)
 
-* docker ps -a -> will show all running & exitedd containers.
+* docker ps -a -> will show all running & exited containers.
 
 * docker stop CID/Cname -> to STOP a running container
 
-* docker rm Cname-> to  remove a stopped or exited container
+* docker rm Cname-> to  remove a stopped or exited container.  We can remove more than 1 container at once using a single 'rm' command.
 
 * docker images -> to see the list of images in our host along with its sizes.
 
@@ -53,7 +53,10 @@ will list all running containers and some basic information about them ( CID, Im
 
 * docker run ubuntu sleep 5 -> execution of a command when we run the container
 
-* docker exec Cname command - >  exec - to executate a command on a running container.
+* docker exec Cname/CID command - >  exec - to executate a command on a running container.
+---
+-it imagename bash -> to be logged in to the docker container automatically.
+* docker run -it imagename bash 
 
 ATTACH & DETACH mode
 * in attached mode we can only see the output and cant do anything else.
@@ -61,3 +64,6 @@ ATTACH & DETACH mode
 * -d -> used to run the container in detached mode.
 * docker run -d Cname -> container will run in background, 
 * docker attach CID -> to attach back to the container
+---------------------
+
+
