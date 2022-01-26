@@ -55,8 +55,9 @@ will list all running containers and some basic information about them ( CID, Im
 
 * docker exec Cname/CID command - >  exec - to executate a command on a running container.
 ---
--it imagename bash -> to be logged in to the docker container automatically.
+
 * docker run -it imagename bash 
+- it imagename bash -> to be logged in to the docker container automatically.
 
 ATTACH & DETACH mode
 * in attached mode we can only see the output and cant do anything else.
