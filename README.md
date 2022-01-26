@@ -66,5 +66,7 @@ ATTACH & DETACH mode
 * docker run -d Cname -> container will run in background, 
 * docker attach CID -> to attach back to the container
 ---------------------
-
-
+Containers are ment to run a specific task
+ie: to do some sort of computation.
+Once the task is complete , then the container exits.
+Container lives only as long as the process inside it is alive.
