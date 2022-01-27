@@ -62,9 +62,9 @@ will list all running containers and some basic information about them ( CID, Im
 ATTACH & DETACH mode
 * in attached mode we can only see the output and cant do anything else.
 * pressing Ctlr+C will exit from attach mode & we will go back to prompt
-* -d -> to run the container in detached mode.
+* -d -> to run the container in detached mode, in background.
 * docker run -d Cname -> container will run in background, 
-* docker attach CID -> to attach back to the container
+* docker attach CID -> to attach back to the container, to work in foreground.
 ---------------------
 Containers are ment to run a specific task
 ie: to do some sort of computation.
@@ -77,6 +77,10 @@ Practicals
 * to run a specific version , we can tag that version . ( eg: redis:4.0 )
 * -i -> Interactive mode-> used to Enter an input after running the container ( docker run -i imagename)
 * -it -> Interactive mode & attached to the terminal
-* -p -> Port maping
+* -p -> Port maping , to be done when Container is in stopped state.
+* ports exposed to the container can be seen after  ' -> '
+* ports published on the host, cen be seen before '-> '
 * -v -> Volume Maping
-* logs -> to get logs -> docker logs CID/CNmae
+* logs -> to get logs -> docker logs CID/CName
+* inspect -> for more info about container. ( docker inspect CID )
+* To tag, use ' : ' after imagename . ( docker run imagename:tagname )
