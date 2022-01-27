@@ -88,7 +88,7 @@ Practicals
 * docker history
 -------
  DOCKER FILE 
-* Docker file contain INSTRUCTIONs & ARGUMENT
+*Docker file contain INSTRUCTIONs & ARGUMENT
 *From Base OS
 *Run -> instructs docker to to run command on base OS
 *Copy -> copies file from local system to docker image.
@@ -96,5 +96,5 @@ Practicals
 
 Layered architecture - if any issue we can start from a particular step instead of starting all over again.
 Rebuilding a layer is easy since it will reuse previous steps from cache.
----
+
  
