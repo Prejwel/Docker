@@ -86,6 +86,7 @@ Practicals
 * To tag and name during docker run, use ' : ' after imagename . ( docker run imagename:tagname )
 * -t -> to tag
 * docker history
+* -e  -> to change env variables
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -101,4 +102,4 @@ Docker file , Docker build
 * docker build -> go to docker file directory , use cmd ( docker build . ), use -t to name it during docker build, use  ' : ' to tag.
 * build , name , tag, , use as image, run container
 * to see base OS of image-> docker run image cat /etc/*release*
-* env field of container can be seen using ( docker exec -it containerName env )
+* env field of container can be seen using ( docker exec -it containerName env ), env variabkles can be changed using -e
