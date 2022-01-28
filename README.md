@@ -96,5 +96,9 @@ DOCKER FILE
 
 Layered architecture - if any issue we can start from a particular step instead of starting all over again.
 Rebuilding a layer is easy since it will reuse previous steps from cache.
+----
+Docker file , Docker build
+* docker build -> go to docker file directory , use cmd ( docker build . ), use -t to name it during docker build, use  ' : ' to tag.
+* build , name , tag, , use as image, run container
+* to see base OS of image-> docker run image cat /etc/*release*
 
- 
