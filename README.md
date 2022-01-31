@@ -87,6 +87,8 @@ Practicals
 * -t -> to tag
 * docker history
 * -e  -> to change env variables
+* --link ->cmd line option to link 2 containers together.
+* --name=newname ( docker run -d --name=redis redis )
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -103,3 +105,28 @@ Docker file , Docker build
 * build , name , tag, , use as image, run container
 * to see base OS of image-> docker run image cat /etc/*release*
 * env field of container can be seen using ( docker exec -it containerName env ), env variabkles can be changed using -e
+*
+---------------------------------------
+DOCKER COMPOSE
+
+Using docker compose ,we can create a config file in yaml format and put together the different services & options (key) specific for running them. 
+Docker compose up,  will bring up the application stack.
+
+Docker compose file 
+1) create a dictionary of container name ( Names- used as key ), (eg : redis)
+2) under each container item, specify the image to be used, ( image is the key here) ( image: redis)
+2a) if we need to instruct docker compose to run docker build instead of trying to puull an image, then use 'build' .  ( build : ./location )
+4) move the ports under the respective containers ( Key :ports ) , ( ports: -5000:80 )
+5) move the links (links : -redis -db )
+Once done 
+* docker compose up -> to bring up the application stack
+* ------
+Docker compose has 3 versions 
+* version 1 - no way to specify the order/ dependency in which containers should run.
+* version 2 - have the property Services , we need to specify version: 2
+here docker compose creates a dedicated bridge network for the applications and attaches all containers to new network.As a result we dont have to use link cmd here.
+Depends on Featue-> depends_on: -redis
+* version 3 - docker swarm support, specify version 3
+Front end & back end networks 
+specify using the key networks: ( networks: -front-end, -back-end )
+-------------------------------------------------------------------
