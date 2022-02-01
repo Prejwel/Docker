@@ -120,6 +120,9 @@ Docker compose file
 5) move the links (links : -redis -db )
 Once done 
 * docker-compose up -> to bring up the application stack
+
+Make sure to give the spaces / Tabs properly in docker compose file
+
 ------
 Docker compose has 3 versions 
 * version 1 - no way to specify the order/ dependency in which containers should run.
@@ -130,3 +133,8 @@ Depends on Featue-> depends_on: -redis
 Front end & back end networks 
 specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
+docker in Windows & Mac
+*Docker toolbox
+*Docker desktop for windows
+---------------------------
+
