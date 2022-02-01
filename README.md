@@ -110,7 +110,7 @@ Docker file , Docker build
 DOCKER COMPOSE
 
 Using docker compose ,we can create a config file in yaml format and put together the different services & options (key) specific for running them. 
-Docker compose up,  will bring up the application stack.
+Docker-compose up,  will bring up the application stack.
 
 Docker compose file 
 1) create a dictionary of container name ( Names- used as key ), (eg : redis)
@@ -119,8 +119,8 @@ Docker compose file
 4) move the ports under the respective containers ( Key :ports ) , ( ports: -5000:80 )
 5) move the links (links : -redis -db )
 Once done 
-* docker compose up -> to bring up the application stack
-* ------
+* docker-compose up -> to bring up the application stack
+------
 Docker compose has 3 versions 
 * version 1 - no way to specify the order/ dependency in which containers should run.
 * version 2 - have the property Services , we need to specify version: 2
