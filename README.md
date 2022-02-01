@@ -133,8 +133,17 @@ Depends on Featue-> depends_on: -redis
 Front end & back end networks 
 specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
+DOCKER ENGINE
+host with docker insrtalled on it.
 docker in Windows & Mac
-*Docker toolbox
-*Docker desktop for windows
+Docker deamon - background process that manages docker objects ( images, containers )
+Rest API - Docker rest Api server is the api interface that can be used by programs to talk to deamon.
+Docker CLI - cmd line interface used to run ,stop etc ... with containers 
+PID Namespace -> each process can have multiple PIDs associated with id.
+* cgroups - Control groups , used by docker to restrict the amt of hardware resource allocated to each container.
+* Docker default storage location - /var/lib/docker
+
+* Docker toolbox
+* Docker desktop for windows
 ---------------------------
 
