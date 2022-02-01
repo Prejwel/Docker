@@ -143,6 +143,12 @@ PID Namespace -> each process can have multiple PIDs associated with id.
 * cgroups - Control groups , used by docker to restrict the amt of hardware resource allocated to each container.
 * Docker default storage location - /var/lib/docker
 
+* mounting ( -v )
+* volume mounting-> mounts a volume from Volume dir
+* Bind mount- mounts a dir from any location on docker host
+* docker run -v destinatioin:source
+* Docker uses storage drivers to enable layered architecture.
+
 * Docker toolbox
 * Docker desktop for windows
 ---------------------------
