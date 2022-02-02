@@ -90,17 +90,16 @@ Practicals
 * --link ->cmd line option to link 2 containers together.
 * --name=newname ( docker run -d --name=redis redis )
 * -v
-* 
-*  network create ( cmd to create our own private network ). Folowed by  driver & subnet & custom isolated network name.
-*  docker network ls ( lists all networks )
-*  -network=Networkname ( to attach to a network )
-*  --driver
-*  --subnet
-*  --gateway
-*  --restart=always
-*  curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
-*  docker image prune -a ( remove dangling images)
-* doxcxker image ls  -> lists all images
+* network create ( cmd to create our own private network ). Folowed by  driver & subnet & custom isolated network name.
+* docker network ls ( lists all networks )
+* -network=Networkname ( to attach to a network )
+* --driver
+* --subnet
+* --gateway
+* --restart=always
+* curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
+* docker image prune -a ( remove dangling images)
+* docker image ls  -> lists all images
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -117,7 +116,7 @@ Docker file , Docker build
 * build , name , tag, , use as image, run container
 * to see base OS of image-> docker run image cat /etc/*release*
 * env field of container can be seen using ( docker exec -it containerName env ), env variabkles can be changed using -e
-*
+
 ---------------------------------------
 DOCKER COMPOSE
 
@@ -137,7 +136,7 @@ Make sure to give the spaces / Tabs properly in docker compose file
 
 --------------
 Docker compose
-has 3 versions 
+* 3 versions 
 
 * version 1 - no way to specify the order/ dependency in which containers should run.
 * version 2 - have the property Services , we need to specify version: 2
