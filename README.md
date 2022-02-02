@@ -77,7 +77,7 @@ Practicals
 * to run a specific version , we can tag that version . ( eg: redis:4.0 )
 * -i -> Interactive mode-> used to Enter an input after running the container ( docker run -i imagename)
 * -it -> Interactive mode & attached to the terminal
-* -p -> Port maping , to be done when Container is in stopped state.
+* -p -> Port maping , to be done when Container is in stopped state. ( -p [HostPort]:[ContainerPort] )
 * ports exposed to the container can be seen after  ' -> '
 * ports published on the host, cen be seen before '-> '
 * -v -> Volume Maping
@@ -97,6 +97,10 @@ Practicals
 *  --driver
 *  --subnet
 *  --gateway
+*  --restart=always
+*  curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
+*  docker image prune -a ( remove dangling images)
+* doxcxker image ls  -> lists all images
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -131,7 +135,7 @@ Once done
 
 Make sure to give the spaces / Tabs properly in docker compose file
 
-------
+--------------
 Docker compose
 has 3 versions 
 
@@ -145,7 +149,8 @@ specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
 DOCKER ENGINE
 * host with docker insrtalled on it.
---
+* by default Docker engine interacts with docker host
+------------------------
 * Docker in Windows & Mac
 * Docker deamon - background process that manages docker objects ( images, containers )
 * Rest API - Docker rest Api server is the api interface that can be used by programs to talk to deamon.
@@ -171,4 +176,28 @@ Networking
 * None - ( --network=none )
 * Host - ( --network=host )
 * Containers inside docker host can resolve each other using container name.
-* 
+* --network=Networkname -> (to attach to a network )
+* docker network create NWname -> ( to create new network )
+* --driver
+* --subnet
+* --gateway
+-----------------------------
+DOCKER REGISTRY
+* Central repo of all Docker images
+* docker.io
+* Its possible to make repository as private also 
+* to login there  ( docker login private-registry.io ) , Give creds after this
+* ( docker image tag my-image localhost:5000/my-image)
+* docker push localhost:5000/my-image
+* docker pull localhost:5000/my-image ( give IP of docker host instead of localhost if we are accessing from another host)
+* --restart=always
+* curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
+*  localhost:5000 -> registry address
+
+----------------------------
+CONTAINER orchestration solutions
+* Docker swarm
+* Kubernetes
+* Mesos
+---
+cluster - set of nodes
