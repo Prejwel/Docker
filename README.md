@@ -90,9 +90,13 @@ Practicals
 * --link ->cmd line option to link 2 containers together.
 * --name=newname ( docker run -d --name=redis redis )
 * -v
-* --network=Networkname
+* 
 *  network create ( cmd to create our own private network ). Folowed by  driver & subnet & custom isolated network name.
 *  docker network ls ( lists all networks )
+*  -network=Networkname ( to attach to a network )
+*  --driver
+*  --subnet
+*  --gateway
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -166,4 +170,5 @@ Networking
 
 * None - ( --network=none )
 * Host - ( --network=host )
-* Containers inside docker host can resolve each other using container name
+* Containers inside docker host can resolve each other using container name.
+* 
