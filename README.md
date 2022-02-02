@@ -135,7 +135,8 @@ specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
 DOCKER ENGINE
 *host with docker insrtalled on it.
--docker in Windows & Mac
+--
+* Docker in Windows & Mac
 * Docker deamon - background process that manages docker objects ( images, containers )
   Rest API - Docker rest Api server is the api interface that can be used by programs to talk to deamon.
   Docker CLI - cmd line interface used to run ,stop etc ... with containers 
