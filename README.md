@@ -82,13 +82,17 @@ Practicals
 * ports published on the host, cen be seen before '-> '
 * -v -> Volume Maping
 * logs -> to get logs -> docker logs CID/CName
-* inspect -> for more info about container. ( docker inspect CID ) , We can find Env variables using INSPECT cmd.
+* inspect -> for more info about container. ( docker inspect CID ) , We can find Env variables using INSPECT cmd., Network details etc
 * To tag and name during docker run, use ' : ' after imagename . ( docker run imagename:tagname )
 * -t -> to tag
 * docker history
 * -e  -> to change env variables
 * --link ->cmd line option to link 2 containers together.
 * --name=newname ( docker run -d --name=redis redis )
+* -v
+* --network=Networkname
+*  network create ( cmd to create our own private network ). Folowed by  driver & subnet & custom isolated network name.
+*  docker network ls ( lists all networks )
 -------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
@@ -124,7 +128,9 @@ Once done
 Make sure to give the spaces / Tabs properly in docker compose file
 
 ------
-Docker compose has 3 versions 
+Docker compose
+has 3 versions 
+
 * version 1 - no way to specify the order/ dependency in which containers should run.
 * version 2 - have the property Services , we need to specify version: 2
 here docker compose creates a dedicated bridge network for the applications and attaches all containers to new network.As a result we dont have to use link cmd here.
@@ -134,7 +140,7 @@ Front end & back end networks
 specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
 DOCKER ENGINE
-*host with docker insrtalled on it.
+* host with docker insrtalled on it.
 --
 * Docker in Windows & Mac
 * Docker deamon - background process that manages docker objects ( images, containers )
@@ -153,4 +159,11 @@ DOCKER ENGINE
 * docker run -v destinatioin:source
 * Docker uses storage drivers to enable layered architecture.
 ---------------------------
+Networking
+* 3 networks are created automatically when docker is installed. ( Bridge , None , Host )
+* Bridge - default network. Private NW 
+* to associate the container with other networks we need to specify the network name.
 
+* None - ( --network=none )
+* Host - ( --network=host )
+* Containers inside docker host can resolve each other using container name
