@@ -1,4 +1,4 @@
-# Docker-basics
+# Docker
 * Main purpose of Docker  - To package and containerize applications and to ship them & to run them anytime anywhere as many times as we want.
 
 Docker editions 
