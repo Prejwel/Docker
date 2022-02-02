@@ -138,9 +138,9 @@ DOCKER ENGINE
 --
 * Docker in Windows & Mac
 * Docker deamon - background process that manages docker objects ( images, containers )
-  Rest API - Docker rest Api server is the api interface that can be used by programs to talk to deamon.
-  Docker CLI - cmd line interface used to run ,stop etc ... with containers 
- PID Namespace -> each process can have multiple PIDs associated with id.
+* Rest API - Docker rest Api server is the api interface that can be used by programs to talk to deamon.
+* Docker CLI - cmd line interface used to run ,stop etc ... with containers 
+* PID Namespace -> each process can have multiple PIDs associated with id.
 * cgroups - Control groups , used by docker to restrict the amt of hardware resource allocated to each container.
 * Docker default storage location - /var/lib/docker
 
