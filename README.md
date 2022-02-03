@@ -15,7 +15,7 @@ Docker uses LXC containers
 
 * Main purpose of Docker  - To package and containerize applications and to ship them & to run them anytime anywhere as many times as we want.
 
-In case of Docker we have The HardwareInfracture -> over which we have the OS -> over that we have Docker installed -> Docker then manages the containers that run with Lib and dependencies alone.
+In case of Docker we have The Hardware Infrastructure -> over which we have the OS -> over that we have Docker installed -> Docker then manages the containers that run with Lib and dependencies alone.
 * HW-> OS -> Docker  -> Container
 * Docker containers are light weight & usally in MB in size , so the boot up is faster.
 
