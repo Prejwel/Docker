@@ -7,7 +7,7 @@ Docker editions
 
 Matrix from Hell - compatibility matrix issue 
 
-With Docker we can run each component ( webserver , DB, messaging, Orchestration ) in a seperate container with its own dependencies and its own Libraries, all on the same VM & OS but within seperate Enviornments / Containers
+With Docker we can run each component ( webserver , DB, messaging, Orchestration ) in a seperate container with its own dependencies and its own Libraries, all on the same VM & OS but within seperate Enviornments / Containers.
 
 * Containers -completely isolated eviornments
 They can have their own Processes, Services, Network Interfaces, Mounts etc but all sharing the same OS Kernal.
@@ -97,11 +97,11 @@ Practice
 * --driver
 * --subnet
 * --gateway
-* --restart=always
+* --restart=always 
 * curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
 * docker image prune -a ( remove dangling images)
 * docker image ls  -> lists all images
--------
+------------
 DOCKER FILE 
 * Docker file contain INSTRUCTIONs & ARGUMENT
 * From Base OS
@@ -111,7 +111,7 @@ DOCKER FILE
 
 Layered architecture - if any issue we can start from a particular step instead of starting all over again.
 Rebuilding a layer is easy since it will reuse previous steps from cache.
-----
+-------------------------
 Docker file , Docker build
 * docker build -> go to docker file directory , use cmd ( docker build . ), use -t to name it during docker build, use  ' : ' to tag.
 * build , name , tag, , use as image, run container
@@ -148,7 +148,7 @@ Front end & back end networks
 specify using the key networks: ( networks: -front-end, -back-end )
 -------------------------------------------------------------------
 DOCKER ENGINE
-* host with docker insrtalled on it.
+* host with docker installed on it.
 * by default Docker engine interacts with docker host
 ------------------------
 * Docker in Windows & Mac
@@ -191,7 +191,7 @@ DOCKER REGISTRY
 * docker push localhost:5000/my-image
 * docker pull localhost:5000/my-image ( give IP of docker host instead of localhost if we are accessing from another host)
 * --restart=always
-* curl -X GET localhost:5000/v2/_catalog  ->list of pulled ,tagged, pushed images  can be found here
+* curl -X GET localhost:5000/v2/_catalog  -> list of pulled ,tagged, pushed images  can be found here
 *  localhost:5000 -> registry address
 
 ----------------------------
