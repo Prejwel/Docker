@@ -72,7 +72,7 @@ ie: to do some sort of computation.
 Once the task is complete , then the container exits.
 Container lives only as long as the process inside it is alive.
 --------------------
-Practicals
+Practice
 * Ctrl+C -> detach
 *  --name newname -> to give a name to a container along with docker run command.
 * to run a specific version , we can tag that version . ( eg: redis:4.0 )
