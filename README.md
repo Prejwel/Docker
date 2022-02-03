@@ -73,7 +73,7 @@ Once the task is complete , then the container exits.
 Container lives only as long as the process inside it is alive.
 --------------------
 Practicals
-* Ctrl+C -> stop a container
+* Ctrl+C -> detach
 *  --name newname -> to give a name to a container along with docker run command.
 * to run a specific version , we can tag that version . ( eg: redis:4.0 )
 * -i -> Interactive mode-> used to Enter an input after running the container ( docker run -i imagename)
