@@ -17,7 +17,7 @@ Docker uses LXC containers
 
 In case of Docker we have The HardwareInfracture -> over which we have the OS -> over that we have Docker installed -> Docker then manages the containers that run with Lib and dependencies alone.
 * HW-> OS -> Docker  -> Container
-Docker containers are light weight & usally in MB in size , so the boot up is faster.
+* Docker containers are light weight & usally in MB in size , so the boot up is faster.
 
 DOCKER HUB
 Containerized versions of applications are readily available in Docker Hub
